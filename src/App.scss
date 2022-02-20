@@ -1,0 +1,34 @@
+.side-nav-container{
+    width: 250px;
+    height: calc(100vh - 70px);
+    background-color: aqua;
+    margin-top: 8px;
+}
+
+.sidenav-list{
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.sidenav-list:hover{
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.user-container{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.user-img{
+    height: 50px;
+    width: 50px;
+}

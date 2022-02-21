@@ -13,7 +13,7 @@ function App() {
           <div>
             <SideNav />
           </div>
-          <div className="p-3">
+          <div className="p-3 w-100">
             <Route exact path="/" component={Home} />
             <Route exact path="/user" component={User} />
           </div>

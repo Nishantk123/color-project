@@ -5,7 +5,9 @@ const Home = () =>{
 
     return(
         <div>
-            this is home page
+            <div className='home-container p-2'>
+                <h3 className='text-center'>Welcome to home  page</h3>
+            </div>
         </div>
     )
 }

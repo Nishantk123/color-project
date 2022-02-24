@@ -4,6 +4,7 @@ import Home from "./component/Home";
 import User from "./component/User";
 import Header from "./component/Header";
 import SideNav from "./component/SideNav";
+import List from "./component/List";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
           <div className="p-3 w-100">
             <Route exact path="/" component={Home} />
             <Route exact path="/user" component={User} />
+            <Route exact path="/list" component={List} />
           </div>
         </div>
       </div>

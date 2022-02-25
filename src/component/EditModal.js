@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const EditModal = ({handleClose}) => {
+const EditModal = ({ editData, handleClose }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+
+  useEffect(() => {
+    setName(editData.name);
+    setEmail(editData.email);
+  }, [editData]);
+
+  console.log(editData);
   return (
     <div className="modal d-block" tabindex="-1">
       <div className="modal-dialog">
@@ -13,16 +23,29 @@ const EditModal = ({handleClose}) => {
               data-bs-dismiss="modal"
               aria-label="Close"
               onClick={handleClose}
+              
             ></button>
           </div>
           <div className="modal-body">
-              <label>User Name</label>
-              <input className="form-control my-3"  placeholder="Enter your name"/>
-              <label>User Email</label>
-              <input className="form-control my-3" placeholder="Enter your email" />
-              <label>User Mobile</label>
-              <input className="form-control my-3" placeholder="Enter your mobile" />
-              
+            <label>User Name</label>
+            <input
+              className="form-control my-3"
+              placeholder="Enter your name"
+              value={name}
+              onChange={(e)=> setName(e.target.value)}
+            />
+            <label>User Email</label>
+            <input
+              className="form-control my-3"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e)=> setEmail(e.target.value)}
+            />
+            <label>User Mobile</label>
+            <input
+              className="form-control my-3"
+              placeholder="Enter your mobile"
+            />
           </div>
           <div className="modal-footer">
             <button

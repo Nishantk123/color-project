@@ -5,6 +5,7 @@ import User from "./component/User";
 import Header from "./component/Header";
 import SideNav from "./component/SideNav";
 import List from "./component/List";
+import Feature from "./component/Feature";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/user" component={User} />
             <Route exact path="/list" component={List} />
+            <Route exact path="/feature" component ={Feature} />
           </div>
         </div>
       </div>

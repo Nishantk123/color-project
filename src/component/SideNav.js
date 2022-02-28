@@ -12,6 +12,9 @@ const SideNav = () => {
     const handleListRoute = () =>{
       history.push("/list")
     }
+    const handleFeatureRoute = () =>{
+      history.push('/feature')
+    }
 
   return (
     <div className="side-nav-container p-3">
@@ -30,7 +33,7 @@ const SideNav = () => {
         <img className="sidenav-image"  src="https://thumbs.dreamstime.com/z/clipboard-vector-icon-check-list-illustration-symbol-roster-logo-clipboard-vector-icon-check-list-illustration-symbol-roster-logo-154426286.jpg" />
         list
         </div>
-      <div className="sidenav-list">
+      <div className="sidenav-list" onClick={handleFeatureRoute}>
         <img className="sidenav-image"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpsIC9V8QXcmneXzRRO1-uyrp3e4bqQhDNQ&usqp=CAU" />
         Feature
       </div>

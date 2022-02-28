@@ -8,6 +8,7 @@ const EditModal = ({ editData, handleClose }) => {
   useEffect(() => {
     setName(editData.name);
     setEmail(editData.email);
+    setMobile(editData.mobile_no)
   }, [editData]);
 
   console.log(editData);
@@ -45,6 +46,8 @@ const EditModal = ({ editData, handleClose }) => {
             <input
               className="form-control my-3"
               placeholder="Enter your mobile"
+              value={mobile}
+              onChange={(e)=> setMobile(e.target.value)}
             />
           </div>
           <div className="modal-footer">
